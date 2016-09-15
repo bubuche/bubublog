@@ -1,29 +1,62 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>blog</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.0/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="./jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="./bootstrap-3.3.0/dist/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.apperance{
+			border-bottom:1px solid gray;
+			padding: 20px 0;
+		}
+	</style>
 </head>
 <body>
-	<div id="app">
-		<div class="header">
-			<a href=""></a>
-			<ul class="daohang">
-				<li>BLOG</li>
-				<li>ARCHIVE</li>
-				<li>ABOUT</li>
-				<li>ABOUT</li>
+	<div class="container">
+		<div class="row" style="padding:50px 0">
+			<div class="col-lg-4">
+				<a href="#" class="pull-right"><img src="./src/logo.jpg" alt="logojpg" class="img-responsive center-block" style="width:60px;height:60px;line-height:60px;"></a>
+			</div>
+			<div class="col-lg-7 col-lg-offset-1">
+				<ul class="nav nav-pills nav-list center">
+					<li class="active nav-list-item"><a href="#">BLOG</a></li>
+					<li class="nav-list-item"><a href="#">ARCHIVE</a></li>
+					<li class="nav-list-item"><a href="#">ABOUT</a></li>
+					<li class="nav-list-item"><a href="#">RESUME</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content row col-lg-8 col-lg-offset-2">
+			<ul>
+				<li class="apperance">
+					<h3>从Object.defineProperty到双向绑定</h3>
+					<small>2016年8月29日</small>
+					<div>
+						<p>近日读了Vue.js一部分源代码，倒也是感到道阻且长。其中最核心的一点就是数据绑定。</p>
+						<p>相比于Angular.js的脏值检查与React.js的虚拟DOM，Vue.js运用了Object.defineProperty来追踪数值的变化和依赖，相当于对数据的读取进行了“劫持”。</p><br>
+						<a href="">...more</a>
+					</div>
+				</li>
+
+				<li class="apperance">
+					<h3>从Object.defineProperty到双向绑定</h3>
+					<small>2016年8月29日</small>
+					<div>
+						<p>近日读了Vue.js一部分源代码，倒也是感到道阻且长。其中最核心的一点就是数据绑定。</p>
+						<p>相比于Angular.js的脏值检查与React.js的虚拟DOM，Vue.js运用了Object.defineProperty来追踪数值的变化和依赖，相当于对数据的读取进行了“劫持”。</p><br>
+						<a href="">...more</a>
+					</div>
+				</li>
 			</ul>
 		</div>
-		<div class="content">
-			<ul class="passage">
-				<li>BLOG</li>
-				<li>ARCHIVE</li>
-				<li>ABOUT</li>
-				<li>ABOUT</li>
-			</ul>
+
+		<div class="footer row col-lg-8 col-lg-offset-2" style="text-align:center;">
+			© 2015 - 2016 Lei Jiang, ycwalker@outlook.com  
 		</div>
-		<div class="footer"></div>
 	</div>
 </body>
 </html>
